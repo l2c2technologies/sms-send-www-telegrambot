@@ -1,0 +1,8 @@
+MANIFEST
+Makefile.PL
+MYMETA.json
+MYMETA.yml
+lib/SMS/Send/WWW/TelegramBot.pm
+t/00_load.t
+t/01_constructor.t
+t/02_send.t
