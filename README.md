@@ -110,24 +110,6 @@ When used within Koha library management system, the bot token can be configured
 * set-up SMSSendUsername syspref with the token of your bot
 * set the chat_id of the individual borrower (fetch using @userinfobot) as the value of that borrower's smsalertnumber
 
-```perl
-# Bot token will be automatically loaded from SMSSendUsername preference
-my $sender = SMS::Send->new('WWW::TelegramBot');
-
-$sender->send_sms(
-    to   => 'CHAT_ID',
-    text => 'Your book is ready for pickup!'
-);
-```
-
-## Configuration Options
-
-| Parameter | Description | Default |
-|-----------|-------------|---------|
-| `_bot_token` or `bot_token` | Telegram Bot API token | Required |
-| `_parse_mode` | Message formatting mode (`HTML` or `Markdown`) | `HTML` |
-| `_debug` | Enable debug output | `0` |
-
 ## Error Handling
 
 The module provides comprehensive error handling:
