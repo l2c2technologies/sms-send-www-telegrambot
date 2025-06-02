@@ -108,6 +108,7 @@ When used within Koha library management system, the bot token can be configured
 
 * set-up SMSSendDriver syspref as 'WWW::TelegramBot'
 * set-up SMSSendUsername syspref with the token of your bot
+* set the chat_id of the individual borrower (fetch using @userinfobot) as the value of that borrower's smsalertnumber
 
 ```perl
 # Bot token will be automatically loaded from SMSSendUsername preference
