@@ -106,6 +106,9 @@ my $sender = SMS::Send->new('WWW::TelegramBot',
 
 When used within Koha library management system, the bot token can be configured via system preferences:
 
+* set-up SMSSendDriver syspref as 'WWW::TelegramBot'}
+* set-up SMSSendUsername syspref with the token of your bot
+
 ```perl
 # Bot token will be automatically loaded from SMSSendUsername preference
 my $sender = SMS::Send->new('WWW::TelegramBot');
